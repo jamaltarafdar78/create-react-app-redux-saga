@@ -1,7 +1,7 @@
 import { expectSaga } from 'redux-saga-test-plan';
 import { throwError } from 'redux-saga-test-plan/providers';
-import * as Services from './services/todo-services';
-import { getTodosWithRetry, getTodosFromApi, retryGetTodosAfter5Secs} from './saga';
+import * as Services from '../services/todo-services';
+import { getTodosWithRetry, getTodosFromApi, retryGetTodosAfter5Secs} from '.';
 import { delay } from 'redux-saga';
 import {call} from 'redux-saga/effects';
 

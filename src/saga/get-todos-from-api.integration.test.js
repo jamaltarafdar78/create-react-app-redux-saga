@@ -1,10 +1,10 @@
 import sinon from 'sinon';
-import * as Services from './services/todo-services';
+import * as Services from '../services/todo-services';
 import { runSaga } from 'redux-saga';
-import {getTodosFromApi} from './saga';
-import {LOAD_TODOS} from './actions/sync-actions';
+import {getTodosFromApi} from '.';
+import {LOAD_TODOS} from '../actions/sync-actions';
 import {createStore, applyMiddleware} from 'redux';
-import reducer from './reducers/todo';
+import reducer from '../reducers/todo';
 import createSagaMiddleware from 'redux-saga';
 
 test('test SUCCESSFUL service call to getTodosFromApi ULTIMATELY causes successful update to state', async () => {

@@ -7,9 +7,9 @@ import {
 } from 'redux-saga/effects';
 
 import { delay } from 'redux-saga';
-import { getTodos } from './services/todo-services';
-import { loadTodos, updateCurrent } from './actions/sync-actions';
-import * as AsyncActions from './actions/async-actions';
+import { getTodos } from '../services/todo-services';
+import { loadTodos, updateCurrent } from '../actions/sync-actions';
+import * as AsyncActions from '../actions/async-actions';
 
 export function* getTodosFromApi() {
     const todos = yield call(getTodos);
