@@ -17,5 +17,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev-server": "./node_modules/.bin/json-server -p 8088 db.json"
+  },
+  "devDependencies": {
+    "sinon": "^4.4.6"
   }
 }

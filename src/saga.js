@@ -9,12 +9,12 @@ import {getTodos} from './services/todo-services';
 import { loadTodos, updateCurrent } from './actions/sync-actions';
 import * as AsyncActions from './actions/async-actions';
 
-function* getTodosFromApi() {
+export function* getTodosFromApi() {
     const todos = yield call(getTodos);
 
     console.log(`recieved ${JSON.stringify(todos)}`);
 
-    yield put(loadTodos(todos));
+    return yield put(loadTodos(todos));
 }
 
 function* updateCurrentReducer({payload}){
