@@ -1,4 +1,5 @@
-import reducer, { addTodo } from './todo';
+import reducer from './todo';
+import {addTodo} from '../actions/sync-actions';
 
 describe('Todo Reducer', () => {
     test('returns a state object', () => {

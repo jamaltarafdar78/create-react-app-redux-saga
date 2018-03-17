@@ -1,11 +1,7 @@
 import * as ACTIONS from '../actions/sync-actions';
 
 const initState = {
-    todos: [
-        {id:1, name: 'name1', isComplete: true},
-        {id:2, name: 'name2', isComplete: false},
-        {id:3, name: 'name3', isComplete: false}
-    ],
+    todos: [],
     currentTodo:''
 }
 
