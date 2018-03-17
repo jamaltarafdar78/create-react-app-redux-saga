@@ -6,8 +6,8 @@ import {
     throttle
 } from 'redux-saga/effects';
 import {getTodos} from './services/todo-services';
-import { loadTodos, updateCurrent } from './actions/todo-actions';
-import * as AsyncActions from './actions/saga-actions';
+import { loadTodos, updateCurrent } from './actions/sync-actions';
+import * as AsyncActions from './actions/async-actions';
 
 function* getTodosFromApi() {
     const todos = yield call(getTodos);

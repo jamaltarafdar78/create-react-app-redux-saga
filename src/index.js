@@ -5,7 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 import { Provider } from 'react-redux';
-import { GET_TODOS_FROM_SERVICE } from './actions/saga-actions';
+import { GET_TODOS_FROM_SERVICE } from './actions/async-actions';
 
 ReactDOM.render(
     <Provider store={store}>

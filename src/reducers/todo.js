@@ -1,4 +1,4 @@
-import * as ACTIONS from '../actions/todo-actions';
+import * as ACTIONS from '../actions/sync-actions';
 
 const initState = {
     todos: [

@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {addTodo} from '../actions/todo-actions';
-import {updateCurrent} from '../actions/saga-actions';
+import {addTodo} from '../actions/sync-actions';
+import {updateCurrent} from '../actions/async-actions';
 
 const TodoForm = ({currentTodo, updateCurrent}) => {
     const handleInput = (e) => {
