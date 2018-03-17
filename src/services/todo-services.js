@@ -1,0 +1,1 @@
+export const getTodos = () => fetch("http://localhost:8088/todos").then(resp => resp.json());
