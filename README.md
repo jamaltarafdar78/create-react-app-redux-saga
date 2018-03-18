@@ -1,3 +1,18 @@
+# Purpose
+The repo is to show how to use [redux-saga](https://github.com/redux-saga/redux-saga) as redux middleware to handle asynchronous actions.
+
+# Get started
+
+```
+yarn install
+yarn dev-server
+yarn start
+```
+
+## Resources
+The react, reducer and store code was taken from Andrew Van Slaars' [React Redux Course](https://github.com/eggheadio-projects/egghead_react_redux_course.git) from [egghead.io](https://egghead.io/courses/build-a-react-app-with-redux).
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
