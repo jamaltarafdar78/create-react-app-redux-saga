@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TodoForm from './components/todo-form';
-import TodoList from './components/todo-list';
-import Message from './components/message';
+import {
+  Footer, 
+  Message,
+  TodoForm,
+  TodoList } from './components';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export default class App extends Component {
   render() {
@@ -13,11 +16,14 @@ export default class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React with React</h1>
         </header>
-        <div className="Todo-App">
-          <Message />
-          <TodoForm />
-          <TodoList />
-        </div> 
+        <Router>
+          <div className="Todo-App">
+            <Message />
+            <TodoForm />
+            <TodoList />
+            <Footer />
+          </div> 
+        </Router>
       </div>
     );
   }  

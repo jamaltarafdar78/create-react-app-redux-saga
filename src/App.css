@@ -44,3 +44,8 @@ ul{
 li {
   list-style-type: none;
 }
+
+a {
+  padding-left: 2px;
+  padding-right: 2px;
+}
