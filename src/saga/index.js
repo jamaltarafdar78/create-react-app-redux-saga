@@ -23,9 +23,9 @@ export function* getTodosFromApi() {
 }
 
 export function* retryGetTodosAfter5Secs(){
+    yield put(messageShow('Attempting to get Todos again!'));
     yield call(delay, 5000);
     console.log('retrying to get Todos!');
-    yield call(updateMessageAndClear, 'Attempting to get Todos again!');
     yield call(getTodosFromApi);
 }
 
