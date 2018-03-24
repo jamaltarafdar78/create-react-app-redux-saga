@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import TodoForm from './components/todo-form';
 import TodoList from './components/todo-list';
+import Message from './components/message';
 
 export default class App extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends Component {
           <h1 className="App-title">Welcome to React with React</h1>
         </header>
         <div className="Todo-App">
+          <Message />
           <TodoForm />
           <TodoList />
         </div> 

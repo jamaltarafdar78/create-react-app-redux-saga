@@ -19,7 +19,7 @@ const TodoForm = ({currentTodo, updateCurrent}) => {
 }
 
 const TodoFormConnect = connect(
-    state => ({ currentTodo: state.currentTodo }),
+    state => ({ currentTodo: state.todo.currentTodo }),
     {updateCurrent}
 )(TodoForm)
 

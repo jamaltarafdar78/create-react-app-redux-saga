@@ -16,7 +16,7 @@ const TodoLost = ({todos}) =>
     </div>
 
 const TodolistConnect = connect(
-    state => ({ todos: state.todos })
+    state => ({ todos: state.todo.todos })
 )(TodoLost);
 
 export default TodolistConnect;

@@ -20,6 +20,7 @@
     "dev-server": "./node_modules/.bin/json-server -p 8088 db.json"
   },
   "devDependencies": {
+    "redux-devtools-extension": "^2.13.2",
     "sinon": "^4.4.6"
   }
 }
